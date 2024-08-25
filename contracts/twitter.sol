@@ -27,7 +27,7 @@ contract Twitter {
             author: msg.sender,
             content: _tweet,
             timestamp: block.timestamp,
-            likes: 0
+            likes: 10
         });
         tweets[msg.sender].push(newTweet);
     }
