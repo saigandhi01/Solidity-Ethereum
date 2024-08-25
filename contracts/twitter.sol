@@ -7,6 +7,13 @@ pragma solidity ^0.8.0;
 // 4️⃣ Create a function to get Tweet 
 // 5️⃣ Add array of tweets 
 // Adding structs after Array[], Structs author content timestamp likes
+//adding Modifiers
+// 1️⃣ Add a function called changeTweetLength to change max tweet length
+// HINT: use newTweetLength as input for function
+// 2️⃣ Create a constructor function to set an owner of contract
+// 3️⃣ Create a modifier called onlyOwner
+// 4️⃣ Use onlyOwner on the changeTweetLength function
+
 
 contract Twitter {
 
@@ -18,6 +25,8 @@ contract Twitter {
         uint256 likes;
     }    
      mapping (address => Tweet[]) public tweets;
+
+     
     
     function createTweet(string memory _tweet) public  {
         // Conditional
