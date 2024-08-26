@@ -15,37 +15,51 @@ pragma solidity ^0.8.0;
 // 4️⃣ Use onlyOwner on the changeTweetLength function
 
 
+
 contract Twitter {
 
-    uint16 constant MAX_TWEET_LENGTH = 280;
-    struct Tweet{
+    uint16 public MAX_TWEET_LENGTH = 280;
+
+    struct Tweet {
         address author;
         string content;
         uint256 timestamp;
         uint256 likes;
-    }    
-     mapping (address => Tweet[]) public tweets;
+    }
+    mapping(address => Tweet[] ) public tweets;
+    address public owner;
 
-     
-    
-    function createTweet(string memory _tweet) public  {
-        // Conditional
-        // if tweet length <= 280 then we are good, otherwise we revert
-        require(bytes(_tweet).length <= MAX_TWEET_LENGTH, "Tweet is too long bro!");
+    constructor() {
+        owner = msg.sender;
+    }
+
+    modifier onlyOwner() {
+        require(msg.sender == owner, "YOU ARE NOT THE OWNER!");
+        _;
+    }
+
+    function changeTweetLength(uint16 newTweetLength) public onlyOwner {
+        MAX_TWEET_LENGTH = newTweetLength;
+    }
+
+    function createTweet(string memory _tweet) public {
+        require(bytes(_tweet).length <= MAX_TWEET_LENGTH, "Tweet is too long bro!" );
+
         Tweet memory newTweet = Tweet({
             author: msg.sender,
             content: _tweet,
             timestamp: block.timestamp,
-            likes: 10
+            likes: 0
         });
+
         tweets[msg.sender].push(newTweet);
     }
 
-    function getTweet(address _owner, uint _i) public view returns (Tweet memory) {
-        return tweets[_owner][_i];
+    function getTweet( uint _i) public view returns (Tweet memory) {
+        return tweets[msg.sender][_i];
     }
 
-    function getAllTweet(address _owner) public view returns (Tweet[] memory){
+    function getAllTweets(address _owner) public view returns (Tweet[] memory ){
         return tweets[_owner];
     }
 
