@@ -13,6 +13,12 @@ pragma solidity ^0.8.0;
 // 2️⃣ Create a constructor function to set an owner of contract
 // 3️⃣ Create a modifier called onlyOwner
 // 4️⃣ Use onlyOwner on the changeTweetLength function
+//adding likes to our contract
+// 1️⃣ Add a function called changeTweetLength to change max tweet length
+// HINT: use newTweetLength as input for function
+// 2️⃣ Create a constructor function to set an owner of contract
+// 3️⃣ Create a modifier called onlyOwner
+// 4️⃣ Use onlyOwner on the changeTweetLength function
 
 
 
