@@ -20,7 +20,18 @@ contract GlobalVariables {
     constructor() {
         owner = msg.sender;
         // here msg.sender is gobal variable, The one who deployed the contract.
-    
+        Myblockhash = block.coinbase;
+        difficulty = block.difficulty;
+        gasLimit = block.gaslimit;
+        number = block.number;
+        timestamp = block.timestamp;
+        //value = msg.value;
+        origin = tx.origin;
+        gasprice = tx.gasprice;
+        callData = msg.data;
+        firstFour = msg.sig;
+        //nowOn = now;
+
     
     
     
