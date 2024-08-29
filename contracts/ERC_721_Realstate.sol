@@ -10,10 +10,6 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract RealStateToken is ERC721, ERC721Enumerable, ERC721Pausable, Ownable {
     uint256 private _nextTokenId;
 
-     // ===== 1. Property Variables ===== //
-
-      // ===== 2. Lifecycle Methods ===== //
-
     constructor(address initialOwner)
         ERC721("RealStateToken", "RST")
         Ownable(initialOwner)
@@ -23,8 +19,6 @@ contract RealStateToken is ERC721, ERC721Enumerable, ERC721Pausable, Ownable {
         return "https://ipfs.io/ipfs/QmS8hHiQf7pzpiM2wmUJn4fEidjb9CpTXU3e2Ai2a4RMXF?filename=Screen_Shot_2021_04_16_at_12.39.26_PM.webp";
     }
 
-    // ===== 3. Pauseable Functions ===== //
-
     function pause() public onlyOwner {
         _pause();
     }
@@ -32,8 +26,6 @@ contract RealStateToken is ERC721, ERC721Enumerable, ERC721Pausable, Ownable {
     function unpause() public onlyOwner {
         _unpause();
     }
-
-      // ===== 4. Minting Functions ===== //
 
     function safeMint(address to) public onlyOwner {
         uint256 tokenId = _nextTokenId++;
