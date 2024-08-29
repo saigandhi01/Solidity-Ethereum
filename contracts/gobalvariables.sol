@@ -30,7 +30,7 @@ contract GlobalVariables {
         gasprice = tx.gasprice;
         callData = msg.data;
         firstFour = msg.sig;
-        //nowOn = now;
+        nowOn = block.timestamp;
 
     
     
