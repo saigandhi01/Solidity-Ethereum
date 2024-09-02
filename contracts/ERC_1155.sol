@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155Pausable.sol";
 import "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155Burnable.sol";
 import "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155Supply.sol";
 
-contract MyToken is ERC1155, Ownable, ERC1155Pausable, ERC1155Burnable, ERC1155Supply {
+contract MyTokenGandhi is ERC1155, Ownable, ERC1155Pausable, ERC1155Burnable, ERC1155Supply {
     constructor(address initialOwner)
         ERC1155("https://ipfs.io/ipfs/QmS8hHiQf7pzpiM2wmUJn4fEidjb9CpTXU3e2Ai2a4RMXF?filename=Screen_Shot_2021_04_16_at_12.39.26_PM.webp")
         Ownable(initialOwner)
