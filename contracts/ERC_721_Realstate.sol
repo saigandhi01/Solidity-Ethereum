@@ -58,3 +58,4 @@ contract RealStateToken is ERC721, ERC721Enumerable, ERC721Pausable, Ownable {
         return super.supportsInterface(interfaceId);
     }
 }
+
