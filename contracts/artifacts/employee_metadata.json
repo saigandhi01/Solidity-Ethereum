@@ -1,0 +1,134 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_empidx",
+						"type": "uint256"
+					},
+					{
+						"name": "_Name",
+						"type": "string"
+					},
+					{
+						"name": "_Role",
+						"type": "string"
+					},
+					{
+						"name": "_Number",
+						"type": "uint256"
+					},
+					{
+						"name": "_Address",
+						"type": "string"
+					},
+					{
+						"name": "_Gender",
+						"type": "string"
+					},
+					{
+						"name": "_Email",
+						"type": "string"
+					},
+					{
+						"name": "_Salary",
+						"type": "uint256"
+					},
+					{
+						"name": "_Age",
+						"type": "uint256"
+					}
+				],
+				"name": "setEmployees",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "EnterEmpID",
+				"outputs": [
+					{
+						"name": "time",
+						"type": "uint256"
+					},
+					{
+						"name": "Name",
+						"type": "string"
+					},
+					{
+						"name": "Role",
+						"type": "string"
+					},
+					{
+						"name": "Number",
+						"type": "uint256"
+					},
+					{
+						"name": "Address",
+						"type": "string"
+					},
+					{
+						"name": "Gender",
+						"type": "string"
+					},
+					{
+						"name": "Email",
+						"type": "string"
+					},
+					{
+						"name": "Salary",
+						"type": "uint256"
+					},
+					{
+						"name": "Age",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/employeedetails.sol": "employee"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/employeedetails.sol": {
+			"keccak256": "0x83d1b85cd7cbe75e6f8826963cbd4fa890601443ed686aad994dd787ddc6ca26",
+			"urls": [
+				"bzzr://39c59f25649ff106debe6f25feb9f04a0d4c1aa8000d9b6dcffc63b0ab7084ce"
+			]
+		}
+	},
+	"version": 1
+}
