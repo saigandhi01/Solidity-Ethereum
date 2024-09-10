@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.26+commit.8a97fa7a"
+		"version": "0.8.27+commit.40a35a09"
 	},
 	"language": "Solidity",
 	"output": {
@@ -8,9 +8,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string[]",
+						"internalType": "bytes32[]",
 						"name": "proposalNames",
-						"type": "string[]"
+						"type": "bytes32[]"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -66,9 +66,9 @@
 				"name": "proposals",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "bytes32",
 						"name": "name",
-						"type": "string"
+						"type": "bytes32"
 					},
 					{
 						"internalType": "uint256",
@@ -131,9 +131,9 @@
 				"name": "winnerName",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "bytes32",
 						"name": "winnerName_",
-						"type": "string"
+						"type": "bytes32"
 					}
 				],
 				"stateMutability": "view",
@@ -154,34 +154,58 @@
 			}
 		],
 		"devdoc": {
+			"details": "Implements voting process along with vote delegation",
 			"kind": "dev",
 			"methods": {
+				"constructor": {
+					"details": "Create a new ballot to choose one of 'proposalNames'.",
+					"params": {
+						"proposalNames": "names of proposals"
+					}
+				},
+				"delegate(address)": {
+					"details": "Delegate your vote to the voter 'to'.",
+					"params": {
+						"to": "address to which vote is delegated"
+					}
+				},
+				"giveRightToVote(address)": {
+					"details": "Give 'voter' the right to vote on this ballot. May only be called by 'chairperson'.",
+					"params": {
+						"voter": "address of voter"
+					}
+				},
+				"vote(uint256)": {
+					"details": "Give your vote (including votes delegated to you) to proposal 'proposals[proposal].name'.",
+					"params": {
+						"proposal": "index of proposal in the proposals array"
+					}
+				},
+				"winnerName()": {
+					"details": "Calls winningProposal() function to get the index of the winner contained in the proposals array and then",
+					"returns": {
+						"winnerName_": "the name of the winner"
+					}
+				},
 				"winningProposal()": {
-					"details": "Computes the winning proposal taking all previous votes into account."
+					"details": "Computes the winning proposal taking all previous votes into account.",
+					"returns": {
+						"winningProposal_": "index of winning proposal in the proposals array"
+					}
 				}
 			},
-			"title": "Voting with delegation.",
+			"title": "Ballot",
 			"version": 1
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {
-				"constructor": {
-					"notice": "Create a new ballot to choose one of `proposalNames`."
-				},
-				"delegate(address)": {
-					"notice": "Delegate your vote to the voter `to`."
-				},
-				"vote(uint256)": {
-					"notice": "Give your vote (including votes delegated to you) to proposal `proposals[proposal].name`."
-				}
-			},
+			"methods": {},
 			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Election.sol": "Ballot"
+			"contracts/3_Ballot.sol": "Ballot"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -195,12 +219,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Election.sol": {
-			"keccak256": "0x5a513c8356cffaac56b64cdcd1c4a54a6a06043f47eb72a2a3ecc71eca2a2bef",
+		"contracts/3_Ballot.sol": {
+			"keccak256": "0x83fe6b367c140a5c7678c420da454c8c3866ccae12da149c5da3ce6568d29b6c",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://a5a6afd541a7236a9fd79c75f2f4cc69fb417fc2bfbbc22c401833af07e8f3ba",
-				"dweb:/ipfs/QmfRUZENNiGxe5YVmxgbP68CztdL8JrAv8FeZnC6wkCMH1"
+				"bzz-raw://5902f2f468a1f776b8f2cb9d584371af88e181954298af92402fca01d0dba3e7",
+				"dweb:/ipfs/QmSUodhSvoorFL5m5CNqve8YvmuBpjCq17NbTf4GUX8ydw"
 			]
 		}
 	},

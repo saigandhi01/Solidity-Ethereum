@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.4.18+commit.9cf6e910"
+		"version": "0.4.26+commit.4563c3fc"
 	},
 	"language": "Solidity",
 	"output": {
@@ -314,8 +314,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/allinone.sol": "Allinone"
+			"contracts/Counter.sol": "Allinone"
 		},
+		"evmVersion": "byzantium",
 		"libraries": {},
 		"optimizer": {
 			"enabled": false,
@@ -324,10 +325,10 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/allinone.sol": {
-			"keccak256": "0x5ae0436b5e86f2f27ad9f83a3ea53e27ff1e1ae9187132f2026f4c7c5aa0d402",
+		"contracts/Counter.sol": {
+			"keccak256": "0xf85ae16f4b6a26616a23c068217c7cfa5d76894a6aba76ae66b5e7c3789e6c71",
 			"urls": [
-				"bzzr://19d398efc123dacefb3a63f89b2147954f37596db532ca2734cfb8f7a2bcc2dc"
+				"bzzr://6415ca5bf36b214daf8aa1ca8b0755d9b8a0d41c688e850284be3f40519e6409"
 			]
 		}
 	},
