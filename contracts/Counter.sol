@@ -5,7 +5,7 @@ contract Counter {
     uint count; 
 
     function getCount() public view returns(uint){
-        return count;
+        return count ++;
     }
 
     
