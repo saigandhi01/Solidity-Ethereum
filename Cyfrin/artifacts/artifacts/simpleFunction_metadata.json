@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_favoriteNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "store",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Cyfrin/artifacts/functions.sol": "simpleFunction"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Cyfrin/artifacts/functions.sol": {
+			"keccak256": "0x53444daacd231715cd4ea972522b729f2a82bdcd2edc3ac7ef373538747c4026",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8bf5bd97e49692d7563a80a6e2da4b3e6a9836820ed9345edc8cb0a609558131",
+				"dweb:/ipfs/QmeRfKir1fs9rtgJF2k82CLRjfT4WbJ1PRfa2uvqitaRpZ"
+			]
+		}
+	},
+	"version": 1
+}
