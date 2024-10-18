@@ -3,15 +3,23 @@ pragma solidity ^0.8.0;
 
 contract simpleFunction{
     
-    uint256 public favoriteNumber;// 0
+    uint256 myFavoriteNumber;// 0
+
+    // uint256[] listOfFavoriteNumbers;
+    struct Person{
+        uint256 favoriteNumber;
+        string name;
+    }
+
+    Person public pat = Person({favoriteNumber:7, name:"Pat"});
 
     function store(uint256 _favoriteNumber) public  {
-          favoriteNumber = _favoriteNumber;
+          myFavoriteNumber = _favoriteNumber;
     }
 
     // view, pure
     function retrieve() public view returns(uint256){
-         return favoriteNumber;
+         return myFavoriteNumber;
     }
 
 }
