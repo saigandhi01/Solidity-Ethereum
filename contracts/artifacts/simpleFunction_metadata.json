@@ -106,7 +106,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Cyfrin/mapping.sol": "simpleFunction"
+			"contracts/mapping.sol": "simpleFunction"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -120,12 +120,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Cyfrin/mapping.sol": {
-			"keccak256": "0x3208c1c4bbbddbea57eec8b21e9bb2b64cfe18ac9fb392577bbcbe1200e88070",
+		"contracts/mapping.sol": {
+			"keccak256": "0x233e69fc9019012c28791b9c565eacbc7c45ed34d6f4526d9e0821105ac32ed1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3f3780207415b5ba13597f8abb391389c984b4426e872f7e21dd13e1cd0ad1e2",
-				"dweb:/ipfs/QmRkseBtCWBU5bNCmkuBkwZ3cQDmV3ajzyUQCH26PMVqHS"
+				"bzz-raw://ce8fd710e2f5a1d82883838cd18e88b7c264cacc9ccd73bc5fe6438898618b9f",
+				"dweb:/ipfs/QmajMyoZcrYAC55yVjy6dVCRvV2ENruppTFzii4CiSBsKf"
 			]
 		}
 	},
