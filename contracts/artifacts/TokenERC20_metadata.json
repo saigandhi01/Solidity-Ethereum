@@ -392,7 +392,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Mycoin.sol": "TokenERC20"
+			"contracts/Gandhicoin.sol": "TokenERC20"
 		},
 		"evmVersion": "byzantium",
 		"libraries": {},
@@ -403,10 +403,10 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Mycoin.sol": {
-			"keccak256": "0x7eb899a04c79399ebdfe6e394e69d29dd1af6eacb217c8cf7aedad5bc984b020",
+		"contracts/Gandhicoin.sol": {
+			"keccak256": "0x297dc53a5c29e739465ea5ae2143baa9b99c96755d29d765047cd7de1f3004d7",
 			"urls": [
-				"bzzr://31d7e8b3fa781d4cfc2e583bba2501e75cb2e0c2d4c510098ff7d3256eee9c9d"
+				"bzzr://ebef09382520953dda571dd77960f801a00c9f4100b96e56597f9f0471397212"
 			]
 		}
 	},
