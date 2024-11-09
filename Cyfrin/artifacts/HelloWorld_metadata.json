@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Cyfrin/new.sol": "HelloWorld"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Cyfrin/new.sol": {
+			"keccak256": "0xe4b30865e06676c0eccb110d634f0aa70f9fcc753e88e77c334f6742cf7196ad",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a014ba8e3841b4da68c72e23783f1c8505561b82ff1c7d62ccf8ca6f9fabb2bf",
+				"dweb:/ipfs/QmP6WsKpFaweRRFNwhQ8ShtRo5XHaDDTpq9Y4SPjd8FrtL"
+			]
+		}
+	},
+	"version": 1
+}
