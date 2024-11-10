@@ -6,40 +6,14 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "favoriteName",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "favoriteNumber",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "_favoriteName",
+						"name": "_enterYourName",
 						"type": "string"
 					}
 				],
-				"name": "store",
+				"name": "enterName",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -48,11 +22,11 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_favoriteNumber",
+						"name": "_enterYourNumber",
 						"type": "uint256"
 					}
 				],
-				"name": "store",
+				"name": "enterNumber",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -61,18 +35,44 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_yourAddress",
+						"name": "_enterYourWalletAddress",
 						"type": "address"
 					}
 				],
-				"name": "store",
+				"name": "enterWalletAddress",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "yourAddress",
+				"name": "enterYourName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "enterYourNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "enterYourWalletAddress",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -112,11 +112,11 @@
 	},
 	"sources": {
 		"Cyfrin/new2.sol": {
-			"keccak256": "0x3f3480a66f21a9faf6116200cb872c8e625c91aaa0f8c5a64710036defa93392",
+			"keccak256": "0x6c9d47bed47d1c83fac6e781c6bafee4841f648f4cb31198f2aa56f488ed8129",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://68a4ab722994cbf631801ca1b80407dd5e9595368236dcc0ca8a945fee037038",
-				"dweb:/ipfs/QmQcqwtMAPTKLX6M5k9opHYavfPUMUsQDD98sbGWcmxvb3"
+				"bzz-raw://937edb6d194bbc062c326452b6d95936cd42436760823460f0ed184886e5cf50",
+				"dweb:/ipfs/QmUVq7qoDN7Ed21QHzPgZoqFf1uB7KtU1Zj2W3ceAhv9Gm"
 			]
 		}
 	},
