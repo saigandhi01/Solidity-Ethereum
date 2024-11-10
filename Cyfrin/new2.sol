@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract SimpleStorage{
-    uint256 public favoriteNumber;
+// name,number,add,
 
-   
-        string public favoriteName;
-        address public yourAddress;
-        bool  yesOrNo;
+contract SimpleStorage {
+      
+    string public enterYourName ;
+    uint256 public enterYourNumber;
+    address public enterYourWalletAddress;
 
+    // functions
 
-    function store(uint256 _favoriteNumber) public{
-        favoriteNumber = _favoriteNumber;
+    function enterName(string memory _enterYourName) public {
+        enterYourName = _enterYourName;
 
     }
 
-    function store(string memory _favoriteName) public{
-        favoriteName = _favoriteName;
+    function enterNumber(uint256 _enterYourNumber) public {
+        enterYourNumber = _enterYourNumber;
     }
 
-    function store(address _yourAddress) public{
-        yourAddress = _yourAddress;
+    function enterWalletAddress(address _enterYourWalletAddress) public {
+        enterYourWalletAddress = _enterYourWalletAddress;
     }
-
 
 }
